@@ -4,12 +4,20 @@ using namespace std;
 //keyword
 int main()
 {
-    //first statement--cout, (output)
-    //you must have opening and closing quotations
-    //all statement must end with ;
-    cout<<"hello";
-    cout<<"This is ICD2O0";
-    //they are side by side
-
+    //lesson today: \ (backslash)
+    
+    //1. \" to print "
+    //2. \\ to print a backslash
+    //3. \n newline
+    //4. \t 
+    //they all need to be inside the opening and
+    //closing quotations
+    //to print quotation you need \" (one use only)
+    //front slash (/) is not a special character
+    cout<<"I \nwant to print \"\"\"/ \\";
     return 0;
+    
+    
+    
+    
 }
