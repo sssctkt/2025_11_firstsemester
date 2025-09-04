@@ -8,6 +8,8 @@ int main()
     //you must have opening and closing quotations
     //all statement must end with ;
     cout<<"hello";
+    cout<<"This is ICD2O0";
+    //they are side by side
 
     return 0;
 }
