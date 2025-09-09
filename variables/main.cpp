@@ -22,7 +22,19 @@ int main()
     //has to be one phrase
     
     int abdul; //this is declaration of an integer variable
+    //21=abdul; //assignment symbol can only assign value from right to left
     abdul=21;
     cout<<abdul;
+    
+    /*more things that could go wrong
+    int he is not paying attention; (has to be one phrase)
+    int 3x (number cannot go first-->x3 is ok)
+    int float (clash with keyword)
+    
+    */
+    double x;
+    x=3.14;
+    cout<<x;
+    
     return 0;
 }
