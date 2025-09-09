@@ -1,40 +1,19 @@
 
+
 #include <iostream>
 using namespace std;
 int main()
 {
-    //variable
-    //= assignment symbol (from right to left)
-    //type
+    //declaration and initialization
+    //this is declaration
+    int x;
+    x=24; //you can assign it later
+    //this is initialization (assign a value when you just declare it)
+    int y=23;
     
-    //a variable is to store and manipulate values
-    //in c++ , whenever you create a variable, you have to associate with type
-
-
-    //types: int (integer, no decimal)
-    //float-->(decimal, up to 6 decimal places)
-    //double-->(decimal, up to 9 decimal places)
-    //char-->(one character. Eg, &, u)
-    //string-->(collection of characters. Eg: how are you doing??)
-    
-    //how to create a variable
-    //first of all variable cannot start with numbers, 
-    //has to be one phrase
-    
-    int abdul; //this is declaration of an integer variable
-    //21=abdul; //assignment symbol can only assign value from right to left
-    abdul=21;
-    cout<<abdul;
-    
-    /*more things that could go wrong
-    int he is not paying attention; (has to be one phrase)
-    int 3x (number cannot go first-->x3 is ok)
-    int float (clash with keyword)
-    
-    */
-    double x;
-    x=3.14;
-    cout<<x;
-    
+    //also, you can mix declaration and initization when you create multiple
+    //variables at the same time
+    double a, b, c, d=23, e,f, g=121.2;
+    cout<<d;
     return 0;
 }
