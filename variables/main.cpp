@@ -1,19 +1,18 @@
 
 
+
 #include <iostream>
 using namespace std;
 int main()
 {
-    //declaration and initialization
-    //this is declaration
+    /*1.	Create 3 declarations with 3 different types, 
+    and 3 initializations with 3 different types*/
     int x;
-    x=24; //you can assign it later
-    //this is initialization (assign a value when you just declare it)
-    int y=23;
+    float y;
+    double z;
     
-    //also, you can mix declaration and initization when you create multiple
-    //variables at the same time
-    double a, b, c, d=23, e,f, g=121.2;
-    cout<<d;
+    int a=12;
+    float v=3.1;
+    double q=4.56;
     return 0;
 }
