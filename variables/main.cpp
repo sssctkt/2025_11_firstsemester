@@ -1,14 +1,10 @@
-/*
-4.	What is an assignment symbol? 
-Give one example of correct assignment, 
-and one example of incorrect assignment.
-*/
-
-/*
-The assignment symbol is "="
-
-x=5    -correct assignment
-5=x    -incorrect assignment
-Assignment is always from right to left
-
-*/
+#include <iostream>
+using namespace std;
+int main(){
+    
+    float x=10.5, y=4;
+    x=x+y;
+    cout<<x<<" "<<y;
+    
+    return 0;
+}
