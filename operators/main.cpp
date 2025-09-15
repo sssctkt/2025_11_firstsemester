@@ -1,13 +1,23 @@
-//math operator
-/*
-+ addition
-- subtraction
-* multiplication
-/ division
-% modulus-->the remainder of a/b For example 13%3 is 1 
+//compound math operator
 
-integer division--if both numbers have no decimals, the answer will have no decimals
-ex: 5/3 will become 1 
-To counter that put ".0" on one or both of them
-5.0/3
-*/
+#include <iostream>
+using namespace std;
+
+int main(){
+    
+    int a=3, b=7, c=11, d=21;
+    a+=5;//same as a=a+(5);
+    cout<<a<<endl;
+    b-=10; //same as b=b-(10);
+    cout<<b<<endl;
+    c*=10; //same as c=c*(10);
+    cout<<c<<endl;
+    d/=2; //same as d=d/(2); 
+    cout<<d<<endl; //integer division
+    
+    //becareful this could be tricky
+    int e=5, f=9;
+    e*=f+2; //e=e*(f+2); bedmas
+    cout<<e<<endl;
+    return 0;
+}
