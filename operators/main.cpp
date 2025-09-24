@@ -1,23 +1,37 @@
-//compound math operator
+//more on operators
 
 #include <iostream>
 using namespace std;
+int main()
+{
+    //review on math operators
+    //+ addition
+    //- subtraction
+    //* multiplication
+    // / division
+    // % modulus
 
-int main(){
+    //review on compound operators
+    // +=   a+=b same as a=a+b
+    // -=   a-=b same as a=a-b
+    // *=   a*=b same as a=a*(b)
+    // /=   a/=b same as a=a/b
     
-    int a=3, b=7, c=11, d=21;
-    a+=5;//same as a=a+(5);
-    cout<<a<<endl;
-    b-=10; //same as b=b-(10);
-    cout<<b<<endl;
-    c*=10; //same as c=c*(10);
-    cout<<c<<endl;
-    d/=2; //same as d=d/(2); 
-    cout<<d<<endl; //integer division
+    //comparision operators
+    // > greater than
+    // < less than
+    // >= greater than or equal to (do not put =>)
+    // <= less than or equal to (do not put =<)
+    // == equal 
+    // != not equal (do not put !==)
     
-    //becareful this could be tricky
-    int e=5, f=9;
-    e*=f+2; //e=e*(f+2); bedmas
-    cout<<e<<endl;
+    
+    //bool-->boolean (true (1) or false (0))
+    
+    bool result;
+    result=6!=11;
+    
+    cout<<result;
+
     return 0;
 }
