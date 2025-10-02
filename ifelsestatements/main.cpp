@@ -3,25 +3,23 @@
 using namespace std;
 int main()
 {
-    int number;
-    cout<<"Enter a number: ";
-    cin>>number;
-    //condition
-    if (number%2==0){
-        //if the condition is true 
-        cout<<"It's an even number!";
+    //today's lesson: two more forms of if else statement
+    //1. if, else if, else
+    string color;
+    cout<<"Enter your favourite color, red, blue, or pink: ";
+    getline(cin, color); //cin for string
+    if (color=="red" || color=="Red"){
+        cout<<"You chose the color red\n";
+        cout<<"You are full of energy ";
     }
-    
+    else if (color=="blue"){
+        cout<<"You chose the color blue\n";
+        cout<<"You like to study ";
+    }
     else{
-        //this is false
-        cout<<"It is an odd number!";
+        cout<<"You chose the color pink\n";
+        cout<<"you like music";
     }
-    cout<<"\nThis is outside of the block";
-    /*observation
-    1. you do not need an else statement to make it work
-    2. notice in the else statement, we have no condition
-    3. they cannot be separatated (if and else)
-    */
     
     return 0;
 }
