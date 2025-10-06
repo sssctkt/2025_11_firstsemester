@@ -12,10 +12,7 @@ int main()
     cout<<"Enter your level: ";
     cin>>level;
     switch(level){
-        case 'A':cout<<"good";
-        case 'B':cout<<"ok";break;
-        case 'C':cout<<"ooooooooooook";
-        case 'D':cout<<"not good";
+        case 'A':case 'B':case 'C':case 'D':cout<<"you pass";break;
         default:cout<<"you fail!";break;
     }
     
