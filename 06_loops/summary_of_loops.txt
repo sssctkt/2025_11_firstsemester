@@ -1,0 +1,5 @@
+/*According to structred program theorem, it says that if you know:
+    1. sequence (next step)
+    2. selection (if else)
+    3. iteration (loops)
+    you can solve any solvable prograamming questions*/
