@@ -1,18 +1,28 @@
 
 #include <iostream>
-#include <ctime> //for time 
-#include <cstdlib> // for rand()
 using namespace std;
 int main()
-{   //goal: create a "FAIR" random number generator
-    
-    //how you start a random value
-    srand(time(NULL));
-    int random=1;
-    while(random!=4){
-        random=rand()%20+1; //between 1 and 20;
-        cout<<random<<endl;
+{
+    /*
+    int starting=1; //1 starting
+    while(starting<=10){ //2 condition
+        cout<<starting<<endl;
+        starting=starting+1;//3 give the loop a chance to exit
+    }*/
+    //starting at 10
+    //count down to 0
+    int starting=10; //1 starting
+    while(starting>=0){ //2 condition
+        cout<<starting<<endl;
+        starting=starting-2;//3 give the loop a chance to exit
     }
-    cout<<random;
+    
+    
+    
+    
+    
+    
+    
+
     return 0;
 }
