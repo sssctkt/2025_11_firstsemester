@@ -3,21 +3,15 @@ using namespace std;
 
 int main(){
     
-    //increment/decrement (pre and post)
-    //++, or -- for add or subtract by 1 
-    
-    //pre increment or pre decrement (apply it right away)
-    
-    int x=21, a=50;
-    int y=30, b=90;
-    
-    cout<<++x<<endl; //pre-increment
-    cout<<--y<<endl; //pre-decrement
-    
-    //post increment or post decrement (apply it next line)
-    cout<<a++<<endl; //post-increment
-    cout<<a<<endl;
-    cout<<b--<<endl; //post-decrement 
-    cout<<b<<endl;
+    //probably the only type of question you will see on an evaluation 
+    //involving increment and decrement
+    //can you do it without pressing run button 
+    int answer, a=5, b=14, c=30;
+    answer=a++ - --b + ++c;
+    cout<<answer++<<endl; //1 mark
+    cout<<++a<<endl; //1 mark
+    cout<<b++<<endl; //1  mark
+    cout<<--c<<endl; //1 mark
+    cout<<answer<<endl; //1 mark
     
 }
