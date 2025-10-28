@@ -1,17 +1,24 @@
+/*so far we have learnt:
+1. while loop and for loop
+2. how we can change from one into another
+3. break and continue
+break exits the loop we are in 
+continue goes back to the condition 
+for loop-->increment/decrement is the last thing to happen 
+increment/decrement ++  -- (pre and post)
+pre-increment or decrement it will increase right away 
+post-increment or decrement it will happen next line 
+*/
 #include <iostream>
 using namespace std;
-
-int main(){
-    
-    //probably the only type of question you will see on an evaluation 
-    //involving increment and decrement
-    //can you do it without pressing run button 
-    int answer, a=5, b=14, c=30;
-    answer=a++ - --b + ++c;
-    cout<<answer++<<endl; //1 mark
-    cout<<++a<<endl; //1 mark
-    cout<<b++<<endl; //1  mark
-    cout<<--c<<endl; //1 mark
-    cout<<answer<<endl; //1 mark
-    
+/* apply increment and decrement symbol to the loop 
+nested loop*/
+int main()
+{
+    /*very important--pre and post increment/decrement has no difference on the loop
+    */
+    for (int i=0; i<11; ++i){
+        cout<<i<<endl;
+    }
+    return 0;
 }
