@@ -18,42 +18,26 @@ using namespace std;
 nested loop*/
 int main()
 {
-    //nested loop--loop inside a loop
-    //start the random seed
-    srand(time(NULL));
-    int answer, number,count=0; //count how many times we have guessed the number
-    int choice;
+    
+    int number;
+    bool primenumber=true;
     while(true){
-        cout<<"Enter 1 to start playing the game. 2 to exit: ";
-        cin>>choice;
-        if (choice==1){
-            ;
-        }
-        else{
+        primenumber=true; //reset 
+        cout<<"Enter a number: "; //later on, change it to -1 to exit
+        cin>>number;
+        if (number<0){
             break;
         }
-        answer=rand()%100+1; //between 1-100
-        while(true){
-            cout<<"Guess a number: ";
-            cin>>number;
-            count++;
-            if (number>answer){
-                cout<<"Too Big"<<endl;
-            }
-            else if (number<answer){
-                cout<<"Too small"<<endl;
-            }
-            else{
+        for(int i=2; i<number; i++){
+            if (number%i==0){
+                primenumber=false;
+                cout<<"It is not a prime number."<<endl;
+                cout<<i<<"x"<<number/i<<endl;
                 break;
             }
-            
         }
-        if (count<=5){
-            cout<<"it took you "<<count<<" attempts. Good Job!"<<endl;
-        }
-        else{
-            cout<<"it took you "<<count<<" attempts. The whole class will have a"<<endl;
-            cout<<"one page quiz on Friday"<<endl;
+        if (primenumber==true){
+            cout<<"It is a prime number"<<endl;
         }
     }
     return 0;
