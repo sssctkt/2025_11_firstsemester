@@ -1,19 +1,20 @@
 
 #include <iostream>
-#include <cstring>
-#include <string>
 using namespace std;
-
 int main()
 {
-    //array -->is to store many elements of the same type 
-    int a[10]={11, 22, 33, 44, 55, 66, 77, 88, 99, 109}; //length is 5 
-    for (int i=9; i>=0; i--){
-        cout<<a[i];
+    int a[10]={1,2,2}; //this is the only line that [10] is the length
+    //all other times, [] is the index
+    //for number array, if you have less number initialized then the length
+    //the rest of the content will become zero
+    char sentence[50]="hello!";
+    //for number array
+    cout<<a<<endl; //do not do this for number array
+    cout<<sentence<<endl; //character array is an exception
+    //in order to print the number array, we got to use a loop to print them
+    //one by one
+    for (int i=0; i<9; i++){
+        cout<<a[i]<<endl;
     }
-    
-    
-    //create your own array, content 10;
-    //print everything backward-->but is there an easier way to do this
     return 0;
 }
