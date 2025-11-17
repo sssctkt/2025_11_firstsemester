@@ -1,16 +1,24 @@
-//q2 from exercise 6
+//q7 from exercise 6
 #include <iostream>
 using namespace std;
 int main()
 {
-    int arr[10]; //length is 10 (starts at 1)
+    int a[10], b[10], counter=0;
     for (int i=0; i<10; i++){
-        cout<<"Enter number "<<i+1<<":";
-        cin>>arr[i]; //index (starts at 0)
+        cout<<"Enter number: "<<i+1<<":";
+        cin>>a[i];
     }
-    //cout<<arr<<endl; //in number array you cannot do this
     for (int i=0; i<10; i++){
-        cout<<arr[i]<<endl;
+        cout<<a[i];
+    }
+    cout<<endl;
+    //lesson for today, you cannot do cout<<a for number array 
+    //and you also cannot do b=a;
+    for (int i=9; i>=0; i--){
+        b[counter++]=a[i];
+    }
+    for (int i=0; i<10; i++){
+        cout<<b[i];
     }
     return 0;
 }
