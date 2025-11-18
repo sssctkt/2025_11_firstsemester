@@ -1,24 +1,15 @@
-//q7 from exercise 6
+// Exercise 6 question 3 answer
 #include <iostream>
+#include <string>
 using namespace std;
 int main()
 {
-    int a[10], b[10], counter=0;
-    for (int i=0; i<10; i++){
-        cout<<"Enter number: "<<i+1<<":";
-        cin>>a[i];
+  int a[40]={0,1}; //rest of the entry
+  for (int i=2; i<40; i++){
+        a[i]=a[i-1]+a[i-2];  
     }
-    for (int i=0; i<10; i++){
-        cout<<a[i];
-    }
-    cout<<endl;
-    //lesson for today, you cannot do cout<<a for number array 
-    //and you also cannot do b=a;
-    for (int i=9; i>=0; i--){
-        b[counter++]=a[i];
-    }
-    for (int i=0; i<10; i++){
-        cout<<b[i];
-    }
-    return 0;
+  for (int i=0; i<40; i++){
+      cout<<a[i]<<" ";
+  }
+  return 0;
 }
