@@ -1,15 +1,18 @@
-// Exercise 6 question 3 answer
+// Example program
 #include <iostream>
 #include <string>
 using namespace std;
 int main()
 {
-  int a[40]={0,1}; //rest of the entry
-  for (int i=2; i<40; i++){
-        a[i]=a[i-1]+a[i-2];  
-    }
-  for (int i=0; i<40; i++){
+  int a[]={1, 2, 3, 4, 5};
+  int answer=0; //if you do not initiaze it to be 0, it will be random
+  int length=sizeof(a)/sizeof(a[0]);
+  //int b[]; wrong
+  //a[5]={1, 2, 3, 4, 5}; //wrong
+  for (int i=length-1; i>=0; i--){
+      answer+=a[i];
       cout<<a[i]<<" ";
   }
+  cout<<endl<<answer;
   return 0;
 }
