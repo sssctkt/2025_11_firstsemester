@@ -9,12 +9,11 @@ int main()
     
     //most of the time you will be using new and easy method to deal with string  
     string s; //string class
-    cout<<"Enter a sentence: ";
-    //cin doesn't take space nor enter key 
-    //if you want to enter everything in one line 
+    int length;
+    //string class also gives us very easy way to manipulate the string 
+    //1. find the length of the string 
     getline(cin, s);
-    cout<<s<<endl;
-    //string is like an array (index starts at 0)
-    cout<<s[1];
+    length=s.size(); //how you find the length of the string (starts at 1)
+    cout<<length;
     return 0;
 }
